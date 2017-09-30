@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.dev4u.hv.guia2_moviles.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="RtlHardcoded,UselessParent">
+
+        <EditText
+            android:id="@+id/txtURL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:hint="Inserta la URL"
+            android:inputType=""
+            tools:ignore="HardcodedText,TextFields" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbnCambiar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Cambiar nombre del archivo"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/rbnNoCambiar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:checked="true"
+                android:text="No Cambiar el nombre"
+                tools:ignore="HardcodedText" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="Nombre del Archivo"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            tools:ignore="HardcodedText" />
+        <ProgressBar
+            android:id="@+id/progressPorcentaje"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+        <TextView
+        android:id="@+id/lblEstado"
+        android:layout_gravity="center"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="0%"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btnDescargar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Descargar"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Guia2_moviles</string>
+    <string name="inserta_la_url">Inserta la URL</string>
+    <string name="cambiar_nombre_del_archivo">Cambiar nombre del archivo</string>
+    <string name="no_cambiar_el_nombre">No Cambiar el nombre</string>
+    <string name="nombre_del_archivo">Nombre del Archivo</string>
+    <string name="descargar">Descargar</string>
+
+</resources>
